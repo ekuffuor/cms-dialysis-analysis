@@ -3,7 +3,7 @@
 **Author:** Emmanuel Osei Kuffuor  
 **Data Source:** CMS Medicare Dialysis Facility Reports (FY2024, Public Dataset)  
 **Tools:** Python, pandas, matplotlib, seaborn, Google Colab  
-**Last Updated:** 06/13/2026
+**Last Updated:** 06/17/2026
 
 ---
 
@@ -35,6 +35,47 @@ The 2.37 percentage point spread suggests relative national consistency in
 dialysis care quality, likely reflecting CMS oversight effectiveness. However,
 urban-dense networks trend higher — driven by patient complexity, vascular
 access type, and social determinants of health rather than facility quality alone.
+
+---
+
+**Finding 2: Risk-Adjusted Mortality Varies Significantly by ESRD Network**
+
+Standardized Mortality Ratios (SMR) across 18 ESRD Networks ranged from
+0.90 (Network 4 - Mid-Atlantic) to 1.09 (Network 16 - Northwest) in 2022.
+
+- **Below expectation (SMR < 1.0 — better than expected):** Mid-Atlantic,
+  Illinois, New York, Upper Midwest
+- **Above expectation (SMR > 1.0 — worse than expected):** Northwest, Texas,
+  Deep South
+
+**The New York Paradox:** Network 2 (New York) had the highest septicemia rate
+in Finding 1 but one of the lowest SMRs (0.91). SMR accounts for patient
+complexity — New York facilities serve higher-acuity populations, so CMS
+expects more deaths. An SMR of 0.91 means they're delivering better outcomes
+than predicted given how sick their patients are. Raw infection rates and
+risk-adjusted mortality tell different stories; both are needed for complete
+quality assessment.
+
+---
+
+**Finding 3: Large Chain Scale Advantage in Septicemia Control**
+
+Septicemia rates among the five largest dialysis chains ranged from
+12.04% (Fresenius Medical Care) to 13.12% (American Renal Associates) in 2022.
+DaVita ranked second lowest at 12.19%.
+
+- **Lowest rates:** Fresenius Medical Care (12.04%), DaVita (12.19%)
+- **Highest rate:** American Renal Associates (13.12%)
+
+The two largest chains — DaVita and Fresenius — perform best, suggesting
+scale advantages in standardized infection-control protocols, dedicated
+quality-improvement teams, real-time data monitoring, and staff training
+infrastructure. Smaller chains may have fewer centralized resources, leading
+to greater variation in infection-prevention practices across facilities.
+
+**Important caveat:** Chain size alone should not be interpreted as the direct
+cause. Patient complexity, catheter prevalence, staffing ratios, socioeconomic
+conditions, and reporting practices may also influence observed rates.
 
 ---
 
